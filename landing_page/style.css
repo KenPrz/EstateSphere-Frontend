@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    /* border: dotted 1px red; */
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* to make sure the navbar stays on top of other content */
+}
+.nav-links {
+    flex: 1;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+.nav-links a:hover {
+    color: black;
+}
+.logo{
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 40px;
+}
+.logo a {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s ease;
+}
+.logo a:hover {
+    color: black;
+}
+.login button {
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    margin-right:2rem;
+    background-color: #18A0FB;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5s ease;
+    border: none;
+
+}
+.login button:hover {
+    background-color: #1482cb;
+}
+
+
+main{
+    margin-top: 65px;
+}
+
+.main-container {
+    height: 50vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url("./img/background-index.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 75%;
+    color: white;
+}
+.searchbar-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* update alignment to left */
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 1rem; /* update margin to 0 */
+}
+.searchbar .tab-selection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: 10px;
+    z-index: 1;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: white;
+    padding-top:.7em;
+    padding-bottom:.7rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-radius: 1rem;
+}
+
+.searchbar input[type='text'] {
+    flex: 1;
+    height: 30px;
+    padding: 0 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: solid black 1px;
+}
+
+.dropdown-container {
+    display: flex;
+}
+
+.dropdown {
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
+    border: solid black 1px;
+}
+
+button[type='submit'] {
+    height: 30px;
+    padding: 0 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #18A0FB;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+button[type='submit']:hover {
+    background-color: #1482cb;
+}
+
+
+
